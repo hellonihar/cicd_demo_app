@@ -172,7 +172,7 @@ This application implements a complete DevOps workflow:
 
 
 *************
-Note: After pullingt the image from Docker Hub tunr the commaone below on Docker console:
+Note: After pullingt the image from Docker Hub run the command below on Docker console:
 docker run -d -p 9090:9090 --name ci-cd-demo hellonihar/cicd_demo_app
 
 ********************
