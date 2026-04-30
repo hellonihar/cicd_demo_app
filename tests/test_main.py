@@ -41,3 +41,20 @@ def test_openapi_json():
     schema = response.json()
     assert schema["info"]["title"] == "CI/CD Demo App"
     assert schema["info"]["version"] == "1.0.0"
+
+
+def test_greet_endpoint():
+    """Test greet endpoint returns personalized message"""
+    name = "Test User"
+    response = client.get(f"/greet?name={name}")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["message"] == f"Hello, {name}! Welcome to CI/CD Demo"
+
+
+def test_greet_endpoint_missing_parameter():
+    """Test greet endpoint requires name parameter"""
+    response = client.get("/greet")
+    assert response.status_code == 422
+    error_detail = response.json()["detail"]
+    assert any(error["loc"] == ["query", "name"] for error in error_detail)
