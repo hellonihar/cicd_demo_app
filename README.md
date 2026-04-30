@@ -39,12 +39,12 @@ uv sync
 
 ### Development Server (with auto-reload)
 ```bash
-uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uv run uvicorn main:app --host 0.0.0.0 --port 9090 --reload
 ```
 
 ### Production Server
 ```bash
-uv run uvicorn main:app --host 0.0.0.0 --port 8000
+uv run uvicorn main:app --host 0.0.0.0 --port 9090
 ```
 
 ## API Endpoints
