@@ -103,6 +103,25 @@ docker stop ci-cd-demo
 docker rm ci-cd-demo
 ```
 
+## Running Tests
+
+### Execute Test Suite
+```bash
+uv run pytest tests/ -v
+```
+
+### Run with coverage report
+```bash
+uv run pytest tests/ --cov=main
+```
+
+✅ All tests should pass successfully. The test suite includes:
+- Root endpoint validation
+- Health check verification
+- 404 error handling
+- Documentation endpoints testing
+- OpenAPI schema validation
+
 ## CI/CD Pipeline
 
 This application is designed to demonstrate continuous integration and deployment workflows. Typical pipeline steps:
