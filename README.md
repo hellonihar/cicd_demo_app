@@ -169,3 +169,10 @@ This application implements a complete DevOps workflow:
 
 ---
 > This project is a demonstration of modern software development practices and continuous integration/delivery pipelines.
+
+
+*************
+Note: After pullingt the image from Docker Hub tunr the commaone below on Docker console:
+docker run -d -p 9090:9090 --name ci-cd-demo hellonihar/cicd_demo_app
+
+********************
