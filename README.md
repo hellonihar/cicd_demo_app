@@ -1,5 +1,5 @@
 # CI/CD Demo App
-
+Welcome
 FastAPI application demonstrating complete CI/CD workflows with UV, GitHub Actions, Docker and automated testing.
 
 ## Requirements
