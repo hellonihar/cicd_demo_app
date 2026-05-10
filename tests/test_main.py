@@ -10,7 +10,7 @@ def test_root_endpoint():
     assert response.status_code == 200
     data = response.json()
     assert "message" in data
-    assert data["message"] == "Welcome to CI/CD Demo"
+    assert data["message"] == "Welcome to CI/CD Demo Application"
 
 
 def test_health_check_endpoint():
