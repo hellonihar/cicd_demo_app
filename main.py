@@ -5,7 +5,7 @@ app = FastAPI(title="CI/CD Demo App", version="1.0.0")
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to CI/CD Demo"}
+    return {"message": "Welcome to CI/CD Demo Application"}
 
 
 # for health check, add an end point that returns a simple message indicating the app is healthy
